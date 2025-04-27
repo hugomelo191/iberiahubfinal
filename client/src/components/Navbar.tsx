@@ -38,10 +38,10 @@ export default function Navbar() {
         <div className="flex items-center">
           <Link href="/" className="font-rajdhani font-bold text-2xl tracking-wider">
               <span className="text-[#FF2D55] [text-shadow:_0_0_10px_#FF2D55]">
-                ESPORTS
+                IBERIA
               </span>
               <span className="text-[#FFCC00] [text-shadow:_0_0_10px_#FFCC00]">
-                IBÉRICOS
+                HUB
               </span>
           </Link>
         </div>
