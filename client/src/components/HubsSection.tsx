@@ -7,7 +7,7 @@ const games = [
     name: "CS2",
     color: "text-[#FF2D55]",
     image: "https://images.unsplash.com/photo-1603481546579-65d935ba9cdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=700",
-    description: "Primeiro hub a ser lançado. Estamos a preparar torneios, eventos e oportunidades para a comunidade ibérica de CS2 crescer em conjunto."
+    description: "Seremos o elo de ligação entre equipas e jogadores, o centro de notícias ibérico, a casa dos casters e streamers, com resultados ao vivo de todas as equipas."
   },
   {
     name: "VALORANT",
