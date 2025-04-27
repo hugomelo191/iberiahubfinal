@@ -69,7 +69,7 @@ export default function HubsSection() {
             className="text-xl max-w-3xl mx-auto opacity-80"
             variants={itemVariants}
           >
-            Como empresa-mãe, a IberiaHub vai lançar hubs dedicados a cada jogo, dando visibilidade, oportunidades e estrutura profissional à cena ibérica.
+            Como empresa-mãe, a IberiaHub vai lançar em breve o hub de CS2, e gradualmente expandir para outras modalidades, dando visibilidade e estrutura profissional à cena ibérica.
           </motion.p>
         </motion.div>
         
@@ -104,7 +104,9 @@ export default function HubsSection() {
                 </p>
                 
                 <div className="flex justify-between items-center">
-                  <span className="text-sm opacity-70">Lançamento em 2024</span>
+                  <span className="text-sm opacity-70">
+                    {game.name === "CS2" ? "Lançamento em breve" : "Lançamento futuro"}
+                  </span>
                   <a href="#" className="text-[#FFCC00] hover:[text-shadow:_0_0_10px_#FFCC00] transition-all duration-300 font-rajdhani font-semibold">
                     Saber mais →
                   </a>
