@@ -4,7 +4,7 @@ import ParticleBackground from "./ParticleBackground";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       <ParticleBackground />
       
       {/* Video/Image Background */}
@@ -37,7 +37,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-[#FF2D55]/20 animate-[glitch_5s_infinite_linear_alternate-reverse]" style={{left: '2px'}}></div>
               <div className="absolute inset-0 bg-[#FFCC00]/20 animate-[glitch_3s_infinite_linear_alternate-reverse]" style={{left: '-2px'}}></div>
             </div>
-            <span className="font-rajdhani font-bold text-4xl md:text-5xl text-[#FFCC00] [text-shadow:_0_0_15px_#FFCC00] relative z-10">EI</span>
+            <span className="font-rajdhani font-bold text-4xl md:text-5xl text-[#FFCC00] [text-shadow:_0_0_15px_#FFCC00] relative z-10">IH</span>
           </div>
         </motion.div>
         
@@ -60,7 +60,7 @@ export default function Hero() {
           animate={{ opacity: 0.9 }}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          Uma nova era no cenário competitivo entre Portugal e Espanha. Juntos somos mais fortes.
+          Uma plataforma que une jogadores, equipas, streamers e casters de Portugal 🇵🇹 e Espanha 🇪🇸. Mais que uma plataforma, somos um movimento.
         </motion.p>
         
         {/* CTA Button */}

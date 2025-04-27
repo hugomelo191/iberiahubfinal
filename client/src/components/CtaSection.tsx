@@ -51,7 +51,7 @@ export default function CtaSection() {
             className="text-xl mb-10 max-w-2xl mx-auto"
             variants={itemVariants}
           >
-            Seja jogador, equipa, patrocinador ou fã, há um lugar para ti no futuro dos esports ibéricos. Dá o primeiro passo agora.
+            Mais que uma plataforma, somos um movimento para quebrar barreiras e unir povos através dos esports. Seja jogador, equipa, streamer ou caster, há um lugar para ti no futuro dos esports ibéricos.
           </motion.p>
           
           <motion.div 

@@ -7,12 +7,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="col-span-1 md:col-span-2">
             <div className="font-rajdhani font-bold text-2xl tracking-wider mb-4">
-              <span className="text-[#FF2D55] [text-shadow:_0_0_10px_#FF2D55]">ESPORTS</span>
-              <span className="text-[#FFCC00] [text-shadow:_0_0_10px_#FFCC00]">IBÉRICOS</span>
+              <span className="text-[#FF2D55] [text-shadow:_0_0_10px_#FF2D55]">IBERIA</span>
+              <span className="text-[#FFCC00] [text-shadow:_0_0_10px_#FFCC00]">HUB</span>
             </div>
             
             <p className="mb-6 opacity-80 max-w-md">
-              Unindo os esports da Península Ibérica. Uma nova era para jogadores, equipas e fãs portugueses e espanhóis.
+              Unindo as comunidades de esports de Portugal 🇵🇹 e Espanha 🇪🇸 numa só plataforma. Um ecossistema ibérico onde jogadores, equipas, streamers e casters crescem juntos.
             </p>
             
             <div className="flex space-x-4">
@@ -56,7 +56,7 @@ export default function Footer() {
         
         <div className="border-t border-[#2D2D2D] mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm opacity-70 mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Esports Ibéricos. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} IberiaHub. Todos os direitos reservados.
           </div>
           
           <div className="flex space-x-6 text-sm opacity-70">

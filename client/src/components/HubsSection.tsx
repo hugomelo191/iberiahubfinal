@@ -69,7 +69,7 @@ export default function HubsSection() {
             className="text-xl max-w-3xl mx-auto opacity-80"
             variants={itemVariants}
           >
-            Criando centros de excelência para cada jogo, desenvolvendo o talento ibérico ao mais alto nível.
+            Como empresa-mãe, a IberiaHub vai lançar hubs dedicados a cada jogo, dando visibilidade, oportunidades e estrutura profissional à cena ibérica.
           </motion.p>
         </motion.div>
         

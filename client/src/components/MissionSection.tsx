@@ -76,18 +76,31 @@ export default function MissionSection() {
                 NOSSA MISSÃO
               </motion.h2>
               
-              <motion.p 
-                className="text-lg mb-6 leading-relaxed"
+              <motion.div
+                className="flex flex-col gap-4 mb-8"
                 variants={itemVariants}
               >
-                Estamos a criar uma ponte entre as comunidades de esports de Portugal e Espanha, unindo talento, paixão e competição num movimento único na Península Ibérica.
-              </motion.p>
+                <div className="flex items-center gap-3">
+                  <div className="text-2xl text-[#FF2D55] font-bold">💡</div>
+                  <p className="text-lg leading-relaxed">Ligar comunidades que compartilham a mesma paixão além das fronteiras.</p>
+                </div>
+                
+                <div className="flex items-center gap-3">
+                  <div className="text-2xl text-[#FF2D55] font-bold">💡</div>
+                  <p className="text-lg leading-relaxed">Criar oportunidades reais para jogadores, equipas, streamers e casters.</p>
+                </div>
+                
+                <div className="flex items-center gap-3">
+                  <div className="text-2xl text-[#FF2D55] font-bold">💡</div>
+                  <p className="text-lg leading-relaxed">Levar os esports ibéricos a outro nível como empresa-mãe de hubs dedicados.</p>
+                </div>
+              </motion.div>
               
               <motion.p 
                 className="text-lg mb-8 leading-relaxed"
                 variants={itemVariants}
               >
-                Acreditamos que juntos podemos elevar o nível competitivo, criar novas oportunidades para atletas e organizações, e posicionar a região como uma potência no cenário global de esports.
+                Mais do que uma plataforma, o IberiaHub é um movimento para quebrar barreiras e mostrar que o esports une povos.
               </motion.p>
               
               <motion.div 
