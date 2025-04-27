@@ -7,19 +7,19 @@ const games = [
     name: "CS2",
     color: "text-[#FF2D55]",
     image: "https://images.unsplash.com/photo-1603481546579-65d935ba9cdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=700",
-    description: "Formando equipas táticas de elite, criando um novo estilo de jogo que combina a agressividade espanhola com a estratégia portuguesa."
+    description: "Primeiro hub a ser lançado. Estamos a preparar torneios, eventos e oportunidades para a comunidade ibérica de CS2 crescer em conjunto."
   },
   {
     name: "VALORANT",
     color: "text-[#FFCC00]",
     image: "https://images.unsplash.com/photo-1542751110-97427bbecf20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=700",
-    description: "Desenvolvendo agentes criativos e táticas inovadoras, com programas de treino intensivos para dominar o meta europeu."
+    description: "Em desenvolvimento para lançamento futuro. Mais informações serão disponibilizadas após o lançamento do hub de CS2."
   },
   {
     name: "LOL",
     color: "text-[#FF2D55]",
     image: "https://images.unsplash.com/photo-1558008258-3256797b43f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=700",
-    description: "Formando a próxima geração de estrelas do MOBA, unindo a paixão ibérica para competir ao mais alto nível nas ligas europeias."
+    description: "Em planeamento para expansão futura. Acompanhe nossas redes sociais para atualizações sobre o cronograma de lançamento."
   }
 ];
 
