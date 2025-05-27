@@ -16,16 +16,16 @@ export default function Footer() {
             </p>
             
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-[#2D2D2D] flex items-center justify-center text-white hover:text-[#FF2D55] transition-colors duration-300">
+              <a href="https://x.com/IberiaHubCS" className="w-10 h-10 rounded-full bg-[#2D2D2D] flex items-center justify-center text-white hover:text-[#FF2D55] transition-colors duration-300">
                 <FaTwitter />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#2D2D2D] flex items-center justify-center text-white hover:text-[#FFCC00] transition-colors duration-300">
+              <a href="https://www.instagram.com/iberia_hub/" className="w-10 h-10 rounded-full bg-[#2D2D2D] flex items-center justify-center text-white hover:text-[#FFCC00] transition-colors duration-300">
                 <FaInstagram />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#2D2D2D] flex items-center justify-center text-white hover:text-[#FF2D55] transition-colors duration-300">
+              <a href="https://tiktok.com/@iberiahub" className="w-10 h-10 rounded-full bg-[#2D2D2D] flex items-center justify-center text-white hover:text-[#FF2D55] transition-colors duration-300">
                 <FaTiktok />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#2D2D2D] flex items-center justify-center text-white hover:text-[#FFCC00] transition-colors duration-300">
+              <a href="https://discord.gg/iberiahub" className="w-10 h-10 rounded-full bg-[#2D2D2D] flex items-center justify-center text-white hover:text-[#FFCC00] transition-colors duration-300">
                 <FaDiscord />
               </a>
             </div>
@@ -34,10 +34,9 @@ export default function Footer() {
           <div className="col-span-1">
             <h3 className="font-rajdhani font-semibold text-xl mb-4 text-[#FFCC00]">Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-[#FFCC00] transition-colors duration-300">Início</a></li>
+              <li><a href="#home" className="hover:text-[#FFCC00] transition-colors duration-300">Início</a></li>
               <li><a href="#about" className="hover:text-[#FFCC00] transition-colors duration-300">Missão</a></li>
               <li><a href="#hubs" className="hover:text-[#FFCC00] transition-colors duration-300">Hubs</a></li>
-              <li><a href="#" className="hover:text-[#FFCC00] transition-colors duration-300">Parcerias</a></li>
               <li><a href="#contact" className="hover:text-[#FFCC00] transition-colors duration-300">Contato</a></li>
             </ul>
           </div>
@@ -45,11 +44,9 @@ export default function Footer() {
           <div className="col-span-1">
             <h3 className="font-rajdhani font-semibold text-xl mb-4 text-[#FF2D55]">Jogos</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-[#FF2D55] transition-colors duration-300">CS2</a></li>
-              <li><a href="#" className="hover:text-[#FF2D55] transition-colors duration-300">Valorant</a></li>
-              <li><a href="#" className="hover:text-[#FF2D55] transition-colors duration-300">League of Legends</a></li>
-              <li><a href="#" className="hover:text-[#FF2D55] transition-colors duration-300">Rocket League</a></li>
-              <li><a href="#" className="hover:text-[#FF2D55] transition-colors duration-300">Fortnite</a></li>
+              <li><a href="#hubs" className="hover:text-[#FF2D55] transition-colors duration-300">CS2</a></li>
+              <li><a href="#hubs" className="hover:text-[#FF2D55] transition-colors duration-300">EA FC</a></li>
+              <li><a href="#hubs" className="hover:text-[#FF2D55] transition-colors duration-300">LoL</a></li>
             </ul>
           </div>
         </div>

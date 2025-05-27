@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaTwitter, FaInstagram, FaTiktok } from "react-icons/fa";
 import ParticleBackground from "./ParticleBackground";
+import logoIberiaHub from "../assets/logo-iberiahub.png";
 
 export default function Hero() {
   return (
@@ -9,13 +10,23 @@ export default function Hero() {
       
       {/* Video/Image Background */}
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920')] bg-cover bg-center bg-no-repeat"></div>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcSet="https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcSet="https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=768"
+          />
+          <div className="w-full h-full bg-cover bg-center bg-no-repeat"></div>
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D] via-[#0D0D0D]/80 to-[#0D0D0D]/50"></div>
       </div>
       
       {/* Hero Content */}
       <motion.div 
-        className="container mx-auto px-4 md:px-8 text-center z-10"
+        className="container mx-auto px-4 md:px-8 text-center z-10 mt-32"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
@@ -32,13 +43,13 @@ export default function Hero() {
             delay: 0.6 
           }}
         >
-          <div className="bg-[#151515] rounded-full flex items-center justify-center w-full h-full border-2 border-[#FF2D55] relative overflow-hidden">
-            <div className="absolute inset-0 opacity-70">
-              <div className="absolute inset-0 bg-[#FF2D55]/20 animate-[glitch_5s_infinite_linear_alternate-reverse]" style={{left: '2px'}}></div>
-              <div className="absolute inset-0 bg-[#FFCC00]/20 animate-[glitch_3s_infinite_linear_alternate-reverse]" style={{left: '-2px'}}></div>
-            </div>
-            <span className="font-rajdhani font-bold text-4xl md:text-5xl text-[#FFCC00] [text-shadow:_0_0_15px_#FFCC00] relative z-10">IH</span>
-          </div>
+          <img 
+            src={logoIberiaHub} 
+            alt="Logo IberiaHub" 
+            className="mx-auto w-full h-full object-contain"
+            loading="eager"
+            fetchPriority="high"
+          />
         </motion.div>
         
         {/* Heading */}
@@ -60,7 +71,7 @@ export default function Hero() {
           animate={{ opacity: 0.9 }}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          Uma plataforma que une jogadores, equipas, streamers e casters de Portugal 🇵🇹 e Espanha 🇪🇸. Mais que uma plataforma, somos um movimento.
+          Começamos com CS2. A comunidade ibérica dos esports, unida e em expansão. Portugal 🇵🇹 e Espanha 🇪🇸 juntos no mesmo servidor.
         </motion.p>
         
         {/* CTA Button */}
@@ -74,9 +85,9 @@ export default function Hero() {
             className="group inline-block bg-gradient-to-r from-[#FF2D55] to-[#FFCC00] text-white font-rajdhani font-bold text-lg md:text-xl px-8 py-4 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-[0_0_15px_#FF2D55]"
             onClick={(e) => {
               e.preventDefault();
-              document.querySelector('#contact')?.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+              document.querySelector("#contact")?.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
               });
             }}
           >
@@ -91,13 +102,13 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.4 }}
         >
-          <a href="#" className="text-white hover:text-[#FF2D55] transition-colors duration-300">
+          <a href="https://x.com/IberiaHubCS" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#FF2D55] transition-colors duration-300">
             <FaTwitter className="text-3xl hover:animate-[glow-pulse_2s_infinite]" />
           </a>
-          <a href="#" className="text-white hover:text-[#FFCC00] transition-colors duration-300">
+          <a href="https://www.instagram.com/iberia_hub/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#FFCC00] transition-colors duration-300">
             <FaInstagram className="text-3xl hover:animate-[glow-pulse_2s_infinite]" />
           </a>
-          <a href="#" className="text-white hover:text-[#FF2D55] transition-colors duration-300">
+          <a href="https://tiktok.com/@iberiahub" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#FF2D55] transition-colors duration-300">
             <FaTiktok className="text-3xl hover:animate-[glow-pulse_2s_infinite]" />
           </a>
         </motion.div>

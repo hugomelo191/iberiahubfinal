@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "wouter";
-import { motion } from "framer-motion";
-import { Menu } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const navLinks = [
@@ -13,6 +13,7 @@ const navLinks = [
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   // Add scroll listener
   if (typeof window !== "undefined") {
@@ -68,21 +69,33 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile Nav */}
-        <div className="md:hidden">
-          <Sheet>
-            <SheetTrigger asChild>
-              <button className="text-white focus:outline-none">
-                <Menu className="h-6 w-6" />
-              </button>
-            </SheetTrigger>
-            <SheetContent className="bg-dark-900/95 border-[#FF2D55]/30">
-              <div className="flex flex-col space-y-6 mt-8 font-rajdhani text-lg">
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-white p-2"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+            className="md:hidden bg-[#0D0D0D] border-t border-[#2D2D2D]"
+          >
+            <div className="container mx-auto px-4 py-4">
+              <div className="flex flex-col space-y-4">
                 {navLinks.map((link) => (
                   <a
                     key={link.name}
                     href={link.href}
-                    className="text-white hover:text-[#FFCC00] transition-colors duration-300 p-2"
+                    className="text-white hover:text-[#FFCC00] transition-colors duration-300 font-rajdhani font-medium text-lg py-2"
                     onClick={(e) => {
                       if (link.href.startsWith("#")) {
                         e.preventDefault();
@@ -90,6 +103,7 @@ export default function Navbar() {
                           behavior: "smooth",
                           block: "start",
                         });
+                        setIsOpen(false);
                       }
                     }}
                   >
@@ -97,10 +111,10 @@ export default function Navbar() {
                   </a>
                 ))}
               </div>
-            </SheetContent>
-          </Sheet>
-        </div>
-      </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 }

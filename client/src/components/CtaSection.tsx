@@ -59,7 +59,9 @@ export default function CtaSection() {
             variants={itemVariants}
           >
             <a 
-              href="#" 
+              href="https://discord.gg/iberiahub" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-[#FF2D55] to-[#FFCC00] text-white font-rajdhani font-bold text-xl px-10 py-5 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-[0_0_15px_#FF2D55]"
             >
               LIGA-TE AO FUTURO DOS ESPORTS
@@ -70,13 +72,13 @@ export default function CtaSection() {
             className="flex justify-center space-x-8 mb-12"
             variants={itemVariants}
           >
-            <a href="#" className="text-white hover:text-[#FF2D55] transition-colors duration-300">
+            <a href="https://x.com/IberiaHubCS" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#FF2D55] transition-colors duration-300">
               <FaTwitter className="text-3xl hover:animate-[glow-pulse_2s_infinite]" />
             </a>
-            <a href="#" className="text-white hover:text-[#FFCC00] transition-colors duration-300">
+            <a href="https://www.instagram.com/iberia_hub/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#FFCC00] transition-colors duration-300">
               <FaInstagram className="text-3xl hover:animate-[glow-pulse_2s_infinite]" />
             </a>
-            <a href="#" className="text-white hover:text-[#FF2D55] transition-colors duration-300">
+            <a href="https://tiktok.com/@iberiahub" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#FF2D55] transition-colors duration-300">
               <FaTiktok className="text-3xl hover:animate-[glow-pulse_2s_infinite]" />
             </a>
           </motion.div>
@@ -86,8 +88,8 @@ export default function CtaSection() {
             variants={itemVariants}
           >
             <span className="font-rajdhani text-lg opacity-70">ou contacte-nos em:</span>
-            <a href="mailto:info@esportsibericos.com" className="font-rajdhani text-lg text-[#FFCC00] hover:[text-shadow:_0_0_10px_#FFCC00]">
-              info@esportsibericos.com
+            <a href="mailto:support@iberiahub.com" className="font-rajdhani text-lg text-[#FFCC00] hover:[text-shadow:_0_0_10px_#FFCC00]">
+              support@iberiahub.com
             </a>
           </motion.div>
         </motion.div>

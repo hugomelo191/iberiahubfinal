@@ -6,19 +6,28 @@ const games = [
   {
     name: "CS2",
     color: "text-[#FF2D55]",
-    image: "https://images.unsplash.com/photo-1603481546579-65d935ba9cdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=700",
+    image: {
+      desktop: "https://images.unsplash.com/photo-1603481546579-65d935ba9cdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=700",
+      mobile: "https://images.unsplash.com/photo-1603481546579-65d935ba9cdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    },
     description: "Seremos o elo de ligação entre equipas e jogadores, o centro de notícias ibérico, a casa dos casters e streamers, com resultados ao vivo de todas as equipas."
   },
   {
-    name: "VALORANT",
+    name: "EA FC",
     color: "text-[#FFCC00]",
-    image: "https://images.unsplash.com/photo-1542751110-97427bbecf20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=700",
+    image: {
+      desktop: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=700",
+      mobile: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    },
     description: "Em desenvolvimento para lançamento futuro. Mais informações serão disponibilizadas após o lançamento do hub de CS2."
   },
   {
-    name: "LOL",
+    name: "LoL",
     color: "text-[#FF2D55]",
-    image: "https://images.unsplash.com/photo-1558008258-3256797b43f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=700",
+    image: {
+      desktop: "https://images.unsplash.com/photo-1558008258-3256797b43f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=700",
+      mobile: "https://images.unsplash.com/photo-1558008258-3256797b43f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    },
     description: "Em planeamento para expansão futura. Acompanhe nossas redes sociais para atualizações sobre o cronograma de lançamento."
   }
 ];
@@ -87,11 +96,22 @@ export default function HubsSection() {
               custom={index}
             >
               <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={game.image}
-                  alt={`${game.name} Competition`}
-                  className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcSet={game.image.desktop}
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcSet={game.image.mobile}
+                  />
+                  <img 
+                    src={game.image.desktop}
+                    alt={`${game.name} Competition`}
+                    className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D] to-transparent"></div>
                 <div className={`absolute bottom-4 left-4 font-rajdhani font-bold text-2xl ${game.color} [text-shadow:_0_0_10px_currentColor]`}>
                   {game.name}
@@ -103,13 +123,10 @@ export default function HubsSection() {
                   {game.description}
                 </p>
                 
-                <div className="flex justify-between items-center">
+                <div className="flex justify-start items-center">
                   <span className="text-sm opacity-70">
                     {game.name === "CS2" ? "Lançamento em breve" : "Lançamento futuro"}
                   </span>
-                  <a href="#" className="text-[#FFCC00] hover:[text-shadow:_0_0_10px_#FFCC00] transition-all duration-300 font-rajdhani font-semibold">
-                    Saber mais →
-                  </a>
                 </div>
               </div>
             </motion.div>
