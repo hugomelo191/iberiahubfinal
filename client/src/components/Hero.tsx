@@ -10,17 +10,12 @@ export default function Hero() {
       
       {/* Video/Image Background */}
       <div className="absolute inset-0 z-0">
-        <picture>
-          <source
-            media="(min-width: 768px)"
-            srcSet="https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcSet="https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=768"
-          />
-          <div className="w-full h-full bg-cover bg-center bg-no-repeat"></div>
-        </picture>
+        <div
+          className="w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1500&q=80')"
+          }}
+        ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D] via-[#0D0D0D]/80 to-[#0D0D0D]/50"></div>
       </div>
       
